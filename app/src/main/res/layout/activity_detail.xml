@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detail_imgvw"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/collection_name"
+        android:ellipsize="end"
+        android:layout_below="@+id/detail_imgvw"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/track_name"
+        android:layout_below="@+id/collection_name"
+        android:paddingLeft="10dp"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/colletion_price"
+        android:layout_below="@+id/collection_name"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
